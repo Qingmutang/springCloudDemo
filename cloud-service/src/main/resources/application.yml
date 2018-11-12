@@ -1,0 +1,10 @@
+#  设置服务名
+server:  port: 9001
+spring:
+  application:
+    name: service-order
+#  设置注册中心地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka
