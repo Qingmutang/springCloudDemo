@@ -1,0 +1,19 @@
+#  设置服务名
+server:
+  port: 9100
+spring:
+  application:
+    name: service-zuul
+#  设置注册中心地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka
+      
+zuul:
+  routes:    api-a:
+      path: /api/memeber/**
+      service-id: service-member
+    api-b:
+      path: /api/order/**
+      service-id: service-order
