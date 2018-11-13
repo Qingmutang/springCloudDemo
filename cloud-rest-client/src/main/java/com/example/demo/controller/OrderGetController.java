@@ -17,7 +17,7 @@ public class OrderGetController {
 	
 	@GetMapping("/getRemote")
 	public List<String>  getRemoteServiceData(){
-		List result = restTemplate.getForObject("http://service-order/order/getOrderList", List.class);
+		List result = restTemplate.getForObject("http://service-member/member/getMember", List.class);
 		return result;
 	}
 	

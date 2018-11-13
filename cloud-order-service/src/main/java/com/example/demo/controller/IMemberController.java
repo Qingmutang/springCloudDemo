@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("/order")
-public interface IOrderController {
+@RequestMapping("/member")
+public interface IMemberController {
 	
-	@GetMapping("/getOrderList")
-	public List<String> getOrderList();
+	@GetMapping("/getMember")
+	public List<String> getMemberList();
 
 }
