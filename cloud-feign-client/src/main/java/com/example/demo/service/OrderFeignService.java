@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient("service-member")
+@FeignClient(value="service-member",fallback=OrderFeignFallBackService.class)
 public interface OrderFeignService{
 
 	@GetMapping("/member/getMember")
