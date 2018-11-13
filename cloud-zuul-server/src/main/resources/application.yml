@@ -12,8 +12,8 @@ eureka:
       
 zuul:
   routes:    api-a:
-      path: /api/memeber/**
+      path: /api-member/**
       service-id: service-member
     api-b:
-      path: /api/order/**
-      service-id: service-order
+      path: /api-order/**
+      service-id: service-feign-order
